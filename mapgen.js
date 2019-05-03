@@ -16,7 +16,8 @@ const ctx = canvas.getContext('2d');
 
 // The construction of the tilemap maze begins with a colormap, which
 // is really just a pattern of numbers that could be represented as
-// colors. Prim's algorithm
+// colors. Prim's algorithm uses this pattern as a starting point for
+// building the eventual maze pattern.
 class Colormap {
 	constructor(pattern, width, height, lineReset) {
 		this.map = this.genColormap(pattern, width, height, lineReset);
